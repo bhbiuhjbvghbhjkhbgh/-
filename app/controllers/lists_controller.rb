@@ -11,7 +11,7 @@ class ListsController < ApplicationController
   def edit
     @list = List.find(params[:id])
   end
-  def creat
+  def create
     @list = List.new(list_params)
     if @list.save
       redirect_to list_path(@list.id)
