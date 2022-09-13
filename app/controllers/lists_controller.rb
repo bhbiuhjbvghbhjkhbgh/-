@@ -16,7 +16,7 @@ class ListsController < ApplicationController
     if @list.save
       redirect_to list_path(@list.id)
     else
-      render :index
+      render :new
     end
   end
   def update
